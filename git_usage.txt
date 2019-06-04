@@ -29,5 +29,17 @@ git remote add origin https://github.com/leven03/WmCaeNet.git
 git push -u origin master (first using)
 git push origin master
 
-
+#branch usage:
+#view
+git branch
+#create
+git branch <name>
+#switch
+git checkout <name>
+#create and switch
+git checkout -b <name>
+#merge a branch to the brach
+git merge <name>
+#delete
+git branch -d <name>
 
