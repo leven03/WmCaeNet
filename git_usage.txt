@@ -43,3 +43,6 @@ git merge <name>
 #delete
 git branch -d <name>
 
+#view branch merge graph
+git log --graph --pretty=oneline --abbrev-commit 
+
