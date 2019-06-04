@@ -10,7 +10,7 @@ git commit -m "Description about the changes."
 git log  /git log --pretty=oneline  / git reflog
 
 #reset changes  ONE 
-git reset --hard HEAD^   / git reset --hard LOGID
+git reset --hard HEAD^   / git reset --hard "commit id"
 #reset changes  TWO
 git reset --hard HEAD^^
 #reset changes  100
