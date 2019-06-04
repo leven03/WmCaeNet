@@ -1,0 +1,33 @@
+#init a local git
+git init
+git status
+
+#add changes to temp
+git add filename.txt
+#submmit changes to respor
+git commit -m "Description about the changes."
+#view the log
+git log  /git log --pretty=oneline  / git reflog
+
+#reset changes  ONE 
+git reset --hard HEAD^   / git reset --hard LOGID
+#reset changes  TWO
+git reset --hard HEAD^^
+#reset changes  100
+git reset --hard HEAD~100
+
+#compare the difference between respository and local working directory
+git diff HEAD -- filename.txt
+#compare changes locally
+git diff filename.txt
+#cancel a changes
+git checkout -- filename.txt
+
+
+#remote GitHub usage:
+git remote add origin https://github.com/leven03/WmCaeNet.git
+git push -u origin master (first using)
+git push origin master
+
+
+
