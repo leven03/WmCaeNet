@@ -67,6 +67,23 @@ git branch --set-upstream-to <branch-name> origin/<branch-name>
 #create local branch about remote branch
 git checkout -b <branch-name> origin/<branch-name>
 
+#Add tag usage
+git tag <tagname> / git tag <tagname> <commit id> / tag :v1.0
+#add tag information
+git tag -a <tagname> -m "<information>"
+git tag show <tagname>
+git tag
+
+##tag operation
+#push a local tag to remote
+git push origin <tagname>
+#push all tag
+git push oririn --tags
+#del local tag
+git tag -d <tagname>
+#delete remote tag
+#git push origin :refs/tags/<tagname>
+
 
 
 
