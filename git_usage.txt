@@ -45,6 +45,10 @@ git branch -d <name>
 #force delete
 git branch -D <name>
 
+#delete remote branch
+#view branch: git branch -a
+git push origin --delete dev
+
 #view branch merge graph
 git log --graph --pretty=oneline --abbrev-commit 
 
