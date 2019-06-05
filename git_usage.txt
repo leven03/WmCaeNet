@@ -9,7 +9,7 @@ git commit -m "Description about the changes."
 #view the log
 git log  /git log --pretty=oneline  / git reflog
 
-#For commit has finished!
+#For commit has finished! It means VERSION roll back
 #reset changes  ONE 
 git reset --hard HEAD^   / git reset --hard "commit id"
 #reset changes  TWO
@@ -18,12 +18,17 @@ git reset --hard HEAD^^
 git reset --hard HEAD~100
 
 #compare the difference between respository and local working directory
-git diff HEAD -- filename.txt
+git diff HEAD -- <filename>
 #compare changes locally
 git diff <filename>
 #cancel a changes in working directory
 git checkout -- <filename>
 
+#Question3
+#if finish ADD operation
+git status
+git reset HEAD <filename>
+git checkout -- <filename>
 
 #remote GitHub usage:
 git remote add origin https://github.com/leven03/WmCaeNet.git
