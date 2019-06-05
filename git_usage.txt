@@ -9,6 +9,7 @@ git commit -m "Description about the changes."
 #view the log
 git log  /git log --pretty=oneline  / git reflog
 
+#For commit has finished!
 #reset changes  ONE 
 git reset --hard HEAD^   / git reset --hard "commit id"
 #reset changes  TWO
@@ -19,9 +20,9 @@ git reset --hard HEAD~100
 #compare the difference between respository and local working directory
 git diff HEAD -- filename.txt
 #compare changes locally
-git diff filename.txt
-#cancel a changes
-git checkout -- filename.txt
+git diff <filename>
+#cancel a changes in working directory
+git checkout -- <filename>
 
 
 #remote GitHub usage:
@@ -84,6 +85,24 @@ git tag -d <tagname>
 #delete remote tag
 #git push origin :refs/tags/<tagname>
 
+###configure alias
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.br branch
+
+#git ci -m "bala bala bala..." == git commit -m "bala bala..."
+
+#git reset HEAD <filename> == git unstage <filename>
+git config --global alias.unstage 'reset HEAD'
+
+#git last
+git config --global alias.last 'log -1'
+
+#git lg
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+#delete alias in ~/.gitconfig
 
 
 
