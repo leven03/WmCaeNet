@@ -52,3 +52,17 @@ git log --graph --pretty=oneline --abbrev-commit
 git stash
 #recover from stash
 git stash pop / git stash list / git stash apply / git stash drop stash@{0}
+
+
+#mutil people cooperation
+#push own changes
+git push origin <bransh-name>
+git pull
+#git pull hint:no tracking information/establish link to remote and local
+git branch --set-upstream-to <branch-name> origin/<branch-name>
+#create local branch about remote branch
+git checkout -b <branch-name> origin/<branch-name>
+
+
+
+
