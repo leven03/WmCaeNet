@@ -42,6 +42,8 @@ git checkout -b <name>
 git merge <name>
 #delete
 git branch -d <name>
+#force delete
+git branch -D <name>
 
 #view branch merge graph
 git log --graph --pretty=oneline --abbrev-commit 
