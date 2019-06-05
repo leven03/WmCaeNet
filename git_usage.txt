@@ -46,3 +46,7 @@ git branch -d <name>
 #view branch merge graph
 git log --graph --pretty=oneline --abbrev-commit 
 
+#save working directory
+git stash
+#recover from stash
+git stash pop / git stash list / git stash apply / git stash drop stash@{0}
