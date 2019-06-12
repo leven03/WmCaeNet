@@ -77,7 +77,7 @@ git checkout -b <branch-name> origin/<branch-name>
 git tag <tagname> / git tag <tagname> <commit id> / tag :v1.0
 #add tag information
 git tag -a <tagname> -m "<information>"
-git tag show <tagname>
+git show <tagname>
 git tag
 
 ##tag operation
